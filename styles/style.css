@@ -1,0 +1,192 @@
+/* ============ Fonts ============ */
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap");
+
+/* ============ Variables ============ */
+:root {
+  /* Color */
+  --text-color: #0b0a0a;
+  --title-color: #f0eef0;
+  --title-text-color: #fff;
+  --body-font: "Poppins", sans-serif;
+
+  --font-regular: 400;
+  --font-medium: 500;
+  --font-semibold: 600;
+  --font-bold: 700;
+}
+
+/* ============ Global Style ============ */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: var(--body-font);
+}
+
+main {
+  max-width: 1920px;
+  margin: 0 auto;
+}
+
+.title {
+  font-weight: var(--font-semibold);
+  letter-spacing: 5px;
+  text-transform: uppercase;
+  margin-bottom: 1rem;
+}
+
+/* ============!!!>>> Left Side of CV <<<!!!============ */
+.left-info {
+  background-color: var(--title-color);
+  padding: 2rem 1.5rem;
+  width: 100%;
+}
+
+.profile-photo {
+  width: 200px;
+  height: 200px;
+  border-radius: 100%;
+  margin: 0 auto;
+  display: block;
+}
+
+.name {
+  color: var(--text-color);
+  font-weight: var(--font-semibold);
+  text-align: center;
+}
+
+.role {
+  font-weight: var(--font-medium);
+  border-bottom: 2px solid lightslategray;
+  padding-bottom: 1rem;
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+/* ============ Contact Info ============ */
+.contact {
+  margin-bottom: 3rem;
+}
+
+.contact-info {
+  display: flex;
+  justify-items: center;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.address p {
+  margin-left: 4px;
+}
+
+/* ============ Education ============ */
+.education {
+  margin-bottom: 3rem;
+}
+
+.education-conetent {
+  display: flex;
+  margin-bottom: 1.5rem;
+}
+
+.education-time {
+  padding-right: 1rem;
+}
+
+.education-round {
+  width: 16px;
+  height: 16px;
+  background-color: gray;
+  border-radius: 50%;
+  margin-top: 0.25rem;
+}
+
+.education-line {
+  width: 2px;
+  height: 110%;
+  background-color: gray;
+  transform: translate(7px, 0);
+}
+
+.education-title {
+  font-weight: var(--font-medium);
+  text-transform: uppercase;
+}
+
+.education-studies {
+  margin: 0.5rem 0;
+}
+
+/* ============ Languages ============ */
+.languages-list {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+/* ============!!!>>> Right Side of CV <<<!!!============ */
+.right-info {
+  padding: 2rem 1.5rem;
+}
+
+.right-title {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.horizontal-line {
+  width: 100%;
+  height: 2px;
+  background-color: lightslategray;
+}
+
+/* ============ Experience ============ */
+.experience {
+  margin-top: 3rem;
+}
+
+.experience-conetent {
+  display: flex;
+  margin-bottom: 1.5rem;
+}
+
+.experience-time {
+  padding-right: 1rem;
+}
+
+.experience-round {
+  width: 16px;
+  height: 16px;
+  border: 2px solid gray;
+  border-radius: 50%;
+  margin-top: 0.25rem;
+}
+
+.experience-line {
+  width: 2px;
+  height: 105%;
+  background-color: gray;
+  transform: translate(7px, 0);
+}
+
+.experience-title {
+  font-weight: var(--font-medium);
+  text-transform: capitalize;
+}
+
+.experience-company-details {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 0.5rem 0;
+}
+
+/* ============ Media Query For Medium Devices ============ */
+@media screen and (min-width: 768px) {
+  main {
+    display: flex;
+    gap: 1.5rem;
+  }
+}
