@@ -213,6 +213,15 @@ a {
   margin: 0.5rem 0;
 }
 
+.experience-company,
+.experience-year {
+  color: #a1a1a1;
+}
+
+.experience-details {
+  color: #4f4f4f;
+}
+
 /* ============ Skills ============ */
 .skills-container {
   display: grid;
